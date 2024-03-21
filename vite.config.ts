@@ -18,7 +18,8 @@ export default defineConfig({
       },
       exposes: {
         "./Button": "./packages/ui/components/atoms/button",
-        './Card': "./packages/ui/components/atoms/card"
+        './Card': "./packages/ui/components/atoms/card",
+        './TextField': './packages/ui/components/atoms/text-field'
       },
       shared: ['vue'],
     }),

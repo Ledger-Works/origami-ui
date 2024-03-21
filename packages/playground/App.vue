@@ -1,13 +1,19 @@
 <template>
   <div class="light inter-100">
-    <Card type="outlined">
-      Test
-    </Card>
+    <TextField
+      v-model="model"
+      type="outlined"
+      label="text"
+    />
+    {{ model }}
   </div>
 </template>
 
 <script setup lang="ts">
-import Card from 'material/Card';
+import TextField from 'material/TextField';
+import { ref } from 'vue';
+
+const model = ref('')
 </script>
 
 <style>
